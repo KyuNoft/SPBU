@@ -1,0 +1,67 @@
+<title>SPBU</title>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url("assets/style.css")?>">
+<fieldset class="bbm">
+<legend>Pilih Nota</legend>
+<?php
+echo form_open('SPBU/detail_jual_pershift');
+?>
+
+<table border="0" align="center">
+	<tr>
+		<th>Masukan No Nota</th>
+	</tr>
+	<tr>
+		<td>No Nota : <input list="Nota" name="no_nota" placeholder="Pilih Nota"></td>
+	</tr>
+</table>
+<br><p align="center"><button type="submit" name="Submit">Tambah Transaksi</button></p>
+</form>
+</fieldset>
+<img src="<?php echo base_url("assets/img/logo.png");?>" class="logo">
+    <ul class="nav1">
+        <li class="nav2"><a href="#">Operator</a>
+            <ul class="nav3">
+                <li class="nav4"><a href="insert_operator">Tambah Operator</a></li>
+                <li class="nav4"><a href="operator">Lihat Operator</a></li>
+                <li class="nav4"><a href="jadwal_operator">Jadwal</a></li>
+            </ul>
+        </li>
+        <li class="nav2"><a href="#">BBM</a>
+            <ul>
+                <li><a href="insert_bbm">Tambah BBM</a></li>
+                <li><a href="bbm">Lihat Stok</a></li>
+            </ul>
+        </li>
+        <li class="nav2"><a href="#">Mesin Pompa</a>
+            <ul>
+                <li><a href="insert_mesin_pompa">Tambah Pompa</a></li>
+                <li><a href="mesin_pompa">Lihat Pompa</a></li>
+            </ul>
+        </li>
+        <li class="nav2"><a href="#">Nota Penjualan</a>
+            <ul>
+                <li><a href="insert_penjualan_pershift">Tambah Nota</a></li>
+                <li><a href="penjualan_pershift">Lihat Nota</a></li>
+                <li><a href="pilih_nota">Isi Nota</a></li>
+            </ul>
+        </li>
+        <li class="nav2"><a href="#">Struk Jual</a>
+            <ul>
+                <li><a href="struk_penjualan">Tambah Struk</a></li>
+            </ul>
+        </li>
+        <li class="nav2"><a href="#">Laporan</a>
+            <ul>
+                <li><a href="jurnal">Jurnal</a></li>
+                <li><a href="bukubesar">Buku Besar</a></li>
+            </ul></li>
+    </ul>
+
+<datalist id="Nota">
+	<?php
+	foreach ($nota as $n)
+	{
+		echo "<option value='$n->no_nota'>";
+	}
+	?>
+</datalist>

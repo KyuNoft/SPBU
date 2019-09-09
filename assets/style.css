@@ -1,0 +1,138 @@
+body {
+	background-size: cover;
+}
+ul ul {
+ display: none;
+}
+ul li:hover > ul {
+ display: block;
+}
+ul {
+ background: gray;
+ padding: 0;
+ list-style: none;
+ position: fixed;
+ display: inline-table;
+ top: 100px;
+ left: 1%;
+}
+.nav1 {
+	height: 470px;
+}
+ul:after {
+ content: ""; 
+ clear: both; 
+ display: block;
+}
+ul li {
+ position:relative;
+ width:150px; 
+}
+.nav2 {
+	margin-top: 20%;
+	text-align: center; 
+}
+.nav3 {
+	width: 120%;
+}
+.nav4 {
+	width: 100%
+}
+ul li:hover {
+ background: white;
+}
+ul li:hover a {
+ color: black;
+}
+ul li a {
+ display: block;
+ padding: 12px 25px;
+ color: white; 
+ text-decoration: none;
+}
+ul ul {
+ background: #5f6975; 
+ border-radius: 0px; 
+ padding: 0;
+ position: absolute; 
+ top:0;
+ left:100%;
+}
+ul ul li {
+ float: none;
+ position: relative;
+}
+ul ul li a {
+ padding: 12px 25px;
+ color: #fff;
+} 
+ul ul li a:hover {
+ background: white;
+}
+ul ul ul {
+ position: absolute; 
+ left: 100%; 
+ top:0;
+}
+.bbm {
+	position: fixed;
+	top: 20%;
+	left: 40%;
+}
+.operator {
+	position: fixed;
+	top: 20%;
+	left: 35%;
+	width: 25%;
+}
+.struk {
+	position: fixed;
+	top: 10%;
+	left: 37%;
+	width: 20%;
+	height: 70%;
+	padding-left: 5%;
+}
+
+legend {
+	font-size: 30px;
+	font-weight: : 50px;
+}
+.logo {
+	width: 17%;
+	position: fixed;
+	top: 5%;
+	left: 1%;	
+}
+.operator{
+	background-size: cover;
+	position: fixed;
+}
+.div1 {
+	background-color: gray;
+	width: 120%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;	
+}
+.ucapan {
+	position: relative;
+	right: 9%;
+	bottom: 30px;
+	font-style: italic;
+	font-size: 50px;
+}
+.div2 {
+	position: fixed;
+	top: 15%;
+	left: 40%;
+}
+
+.jadwal{
+	position: fixed;
+	margin-top: 15%;
+	margin-left: 30%;
+}
+.jurnal{
+	font-color: white;
+}
